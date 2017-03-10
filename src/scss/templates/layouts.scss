@@ -1,0 +1,21 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	position: relative;
+	box-sizing: border-box;
+	width: 1366px;
+}
+
+.container{
+	width: 821px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: table;
+}
