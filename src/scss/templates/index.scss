@@ -13,6 +13,73 @@
 	}
 }
 
+.slicknav_menu{
+	display: none;
+	background: #fedb00;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	padding: 0;
+}
+
+.slicknav_btn {
+	position: relative;
+	z-index: 999;
+	margin: 0;
+	display: block;
+	width: 100%;
+	border-radius: 0;
+	background: #fedb00;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	height: 118px;
+	padding: 0;
+	span{
+		display: none !important;
+	}
+	&:before{
+		content: '';
+		display: inline-block;
+		position: absolute;
+		width: 50px;
+		height: 42px;
+		background: url("../../images/nav-bar.png") top	left;
+		top: 38px;
+		left: 28px;
+	}
+	&:after{
+		content: '';
+		display: inline-block;
+		position: absolute;
+		width: 120px;
+		height: 108px;
+		background: url("../../images/nav-logo.png") top left;
+		left: calc(50% - 60px);
+	}
+}
+
+.slicknav_menutxt,
+.slicknav_icon{
+	display: none;
+}
+
+.slicknav_nav{
+	.nav-item{
+		margin: 0 !important;
+		font-size: 18px;
+		padding: 0;
+		text-align: left;
+		line-height: 36px;
+		border-bottom: 2px solid #000;
+		.nav-link{
+			color: #df2625;
+			&__wrap{
+				display: none;
+			}
+		}
+		&:nth-child(3){
+			display: none;
+		}
+	}
+}
+
 .nav-item{
 	display: inline-block;
 	vertical-align: top;
@@ -71,19 +138,26 @@
 		position: absolute;
 		left: 0;
 		bottom: 0;
+		z-index: 1;
 	}
 	&__content{
 		padding-top: 57px;
 		padding-left: 127px;
+		position: relative;
+		z-index: 2;
 		&_sub{
 			position: absolute;
 			top: 0;
-			right: -272px;
+			right: 0;
 			width: 258px;
 			padding: 0;
 			box-shadow: 0 0 20px rgba(0, 0, 0, 0.31);
 		}
 	}
+}
+
+.main-step-wrap{
+	position: relative;
 }
 
 .main-text{
@@ -271,18 +345,10 @@
 /*----akcii----*/
 
 .akcii{
-
+	background: url("../../images/password-bg.png");
+	background-size: cover;
 	&__head{
-		font-size: 50px;
-		text-transform: uppercase;
-		color: white;
-		font-family: 'LAYS-BOLD';
-		text-align: center;
-		background: url("../../images/akcii-bg.png") top center;
-		padding: 44px 0 48px 0;
-	}
-	&__list{
-
+		padding: 37px 0 41px;
 	}
 }
 
@@ -413,14 +479,9 @@
 .present{
 	background: url("../../images/present-bg.png") top center;
 	background-size: cover;
-	padding: 42px 0 46px;
+	padding: 35px 0 46px;
 	&__head{
-		font-size: 50px;
-		text-transform: uppercase;
-		font-family: 'LAYS-BOLD';
-		text-align: center;
-		color: #eb212e;
-		margin-bottom: 37px;
+		margin-bottom: 30px;
 	}
 	&__list{
 		width: 822px;
@@ -465,13 +526,7 @@
 	background-size: cover;
 	padding: 37px 0 38px;
 	&__head{
-		font-size: 50px;
-		text-transform: uppercase;
-		font-family: 'LAYS-BOLD';
-		text-align: center;
-		color: white;
 		margin-bottom: 69px;
-		line-height: 64px;
 	}
 	&__list{
 		width: 995px;
@@ -579,26 +634,22 @@
 /*----products----*/
 
 .products{
-	background: url("../../images/products-bg.png") top center repeat-x;
+	background: url("../../images/products-bg.png") top center;
+	background-size: cover;
 	padding-top: 36px;
 	padding-bottom: 49px;
 	&__head{
-		font-size: 50px;
-		text-transform: uppercase;
-		font-family: 'LAYS-BOLD';
-		text-align: center;
-		color: #dd0b1c;
 		margin-bottom: 26px;
-		line-height: 64px;
 	}
 	&__text{
 		font-size: 16px;
 		color: #1d1d1b;
-		font-family: 'GothamProBold';
 		text-align: center;
-		padding: 0 104px;
+		padding: 0;
 		line-height: 19px;
-		margin-bottom: 32px;
+		margin: 0 auto 32px;
+		width: 612px;
+		font-family: 'GothamProBold';
 		a{
 			color: #dd0b1c;
 		}

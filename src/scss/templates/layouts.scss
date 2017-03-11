@@ -5,11 +5,11 @@
 body{
 	position: relative;
 	box-sizing: border-box;
-	width: 1366px;
+	width: 100%;
 }
 
 .container{
-	width: 821px;
+	width: 1366px;
 	margin: 0 auto;
 	position: relative;
 }
@@ -18,4 +18,18 @@ body{
 	content: '';
 	clear: both;
 	display: table;
+}
+
+h2,
+h3{
+	font-size: 50px;
+	text-transform: uppercase;
+	color: white;
+	font-family: 'LAYS-BOLD';
+	text-align: center;
+	line-height: 64px;
+}
+
+h3{
+	color: #eb212e;
 }

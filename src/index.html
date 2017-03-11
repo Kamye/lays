@@ -1,9 +1,9 @@
 //= templates/header.html
 <header class="header">
     <div class="container">
-        <ul class="header__nav-list clearfix">
+        <ul id="nav" class="header__nav-list clearfix">
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#about" class="nav-link">
                     <div class="nav-link__wrap">
                         <img class="nav-link__img" src="images/akcii.png" alt="">
                     </div>
@@ -11,7 +11,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#present" class="nav-link">
                     <div class="nav-link__wrap">
                         <img class="nav-link__img" src="images/present.png" alt="">
                     </div>
@@ -24,7 +24,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#promo" class="nav-link">
                     <div class="nav-link__wrap">
                         <img class="nav-link__img" src="images/shirt.png" alt="">
                     </div>
@@ -32,7 +32,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#products" class="nav-link">
                     <div class="nav-link__wrap">
                         <img class="nav-link__img" src="images/smile.png" alt="">
                     </div>
@@ -42,77 +42,83 @@
         </ul>
     </div>
 </header>
-<div class="main">
-    <div class="container">
-        <div class="main__content">
-            <p class="main-text main-text_regular">Сделай селфи</p>
-            <p class="main-text main-text_small">#LaysSmiles</p>
-            <p class="main-text main-text_big">И ВЫиграй!</p>
+<div class="main clearfix">
+    <div class="main__content">
+            <p data-aos="fade-down" class="main-text main-text_regular">Сделай селфи</p>
+            <p data-aos="fade-down" class="main-text main-text_small">#LaysSmiles</p>
+            <p data-aos="fade-down" class="main-text main-text_big">И ВЫиграй!</p>
             <ul class="main-step clearfix">
-                <li class="main-step__item">
-                    <div class="main-step-block clearfix">
-                        <span class="main-step__item_num">1</span>
-                        <p class="main-step__item_text">Купи</p>
+                <li data-aos="fade-up" data-aos-delay="600" class="main-step__item">
+                    <div class="main-step-wrap">
+                        <div class="main-step-block clearfix">
+                            <span class="main-step__item_num">1</span>
+                            <p class="main-step__item_text">Купи</p>
+                        </div>
+                        <img class="main-step-img" src="images/lays-1.png" alt="">
+                        <p class="main-step-text">пачку Lay’s</p>
                     </div>
-                    <img class="main-step-img" src="images/lays-1.png" alt="">
-                    <p class="main-step-text">пачку Lay’s</p>
                 </li>
-                <li class="main-step__item">
-                    <div class="main-step-block clearfix">
-                        <span class="main-step__item_num">2</span>
-                        <p class="main-step__item_text">Поделись селфи</p>
+                <li data-aos="fade-up" data-aos-delay="1000" class="main-step__item">
+                    <div class="main-step-wrap">
+                        <div class="main-step-block clearfix">
+                            <span class="main-step__item_num">2</span>
+                            <p class="main-step__item_text">Поделись селфи</p>
+                        </div>
+                        <img class="main-step-img" src="images/lays-2.png" alt="">
+                        <p class="main-step-text">добавь хештег <span>#LaysSmile</span> и собери много лайков</p>
                     </div>
-                    <img class="main-step-img" src="images/lays-2.png" alt="">
-                    <p class="main-step-text">добавь хештег <span>#LaysSmile</span> и собери много лайков</p>
                 </li>
-                <li class="main-step__item">
-                    <div class="main-step-block clearfix">
-                        <span class="main-step__item_num">3</span>
-                        <p class="main-step__item_text">Выигрывай</p>
+                <li data-aos="fade-up" data-aos-delay="1400" class="main-step__item">
+                    <div class="main-step-wrap">
+                        <div class="main-step-block clearfix">
+                            <span class="main-step__item_num">3</span>
+                            <p class="main-step__item_text">Выигрывай</p>
+                        </div>
+                        <img class="main-step-img" src="images/lays-3.png" alt="">
+                        <p class="main-step-text">гарантированные призы </p>
                     </div>
-                    <img class="main-step-img" src="images/lays-3.png" alt="">
-                    <p class="main-step-text">гарантированные призы </p>
                 </li>
             </ul>
         </div>
-        <div class="main__content main__content_sub">
-            <div class="main-sub">Собери пачки Lay's и получи подарки!</div>
-            <img class="main-sub-img" src="images/main-shirt.png" alt="">
-            <a class="main-sub-link" href="#">Подробнее</a>
-        </div>
+    <div data-aos="fade-left" class="main__content main__content_sub">
+        <div class="main-sub">Собери пачки Lay's и получи подарки!</div>
+        <img class="main-sub-img" src="images/main-shirt.png" alt="">
+        <a class="main-sub-link" href="#">Подробнее</a>
     </div>
-    <img class="main__img" src="images/main-face.png" alt="">
+    <img data-aos="fade-right" class="main__img" src="images/main-face.png" alt="">
 </div>
-<div class="akcii">
-    <h2 class="akcii__head">ОБ АКции</h2>
-    <ul class="akcii__list clearfix">
-        <li class="akcii-item akcii-item_1">
-            <img class="akcii-item__img" src="images/akcii-step-1.png" alt="">
-            <p class="akcii-item__text">Купи Lays в промо упаковке</p>
-        </li>
-        <li class="akcii-item akcii-item_2">
-            <img class="akcii-item__img" src="images/akcii-step-2.png" alt="">
-            <div class="akcii-item__wrap">
-                поделись сэлфи <br>
-                в социальных сетях <br>
-                добавив хештег <br>
-                <span class="akcii-item__wrap_name">#LaysSmile</span>
-            </div>
-        </li>
-        <li class="akcii-item akcii-item_3">
-            <img class="akcii-item__img" src="images/like.png" alt="">
-            <p class="akcii-item__text">собери много лайков</p>
-        </li>
-        <li class="akcii-item akcii-item_4">
-            <img class="akcii-item__img" src="images/akcii-step-4.png" alt="">
-            <p class="akcii-item__text">Участвуй в акции <br> и выигрывай ценные призы! </p>
-        </li>
-    </ul>
-</div>
-<div class="present">
-    <h2 class="present__head">МНОЖЕСТВО ценных призов!</h2>
+<div class="akcii" id="about">
     <div class="container">
-        <ul class="present__list clearfix">
+        <h2 data-aos="fade-down" data-aos-delay="1400" class="akcii__head">ОБ АКции</h2>
+        <ul class="akcii__list clearfix">
+            <li data-aos="fade-right" data-aos-delay="1600" class="akcii-item akcii-item_1">
+                <img class="akcii-item__img" src="images/akcii-step-1.png" alt="">
+                <p class="akcii-item__text">Купи Lays в промо упаковке</p>
+            </li>
+            <li data-aos="fade-left" data-aos-delay="2000" class="akcii-item akcii-item_2">
+                <img class="akcii-item__img" src="images/akcii-step-2.png" alt="">
+                <div class="akcii-item__wrap">
+                    поделись сэлфи <br>
+                    в социальных сетях <br>
+                    добавив хештег <br>
+                    <span class="akcii-item__wrap_name">#LaysSmile</span>
+                </div>
+            </li>
+            <li data-aos="fade-right" data-aos-delay="2400" class="akcii-item akcii-item_3">
+                <img class="akcii-item__img" src="images/like.png" alt="">
+                <p class="akcii-item__text">собери много лайков</p>
+            </li>
+            <li data-aos="fade-left" data-aos-delay="2800" class="akcii-item akcii-item_4">
+                <img class="akcii-item__img" src="images/akcii-step-4.png" alt="">
+                <p class="akcii-item__text">Участвуй в акции <br> и выигрывай ценные призы! </p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="present" id="present">
+    <div class="container">
+        <h3 data-aos="fade-left" data-aos-delay="800" class="present__head">МНОЖЕСТВО ценных призов!</h3>
+        <ul data-aos="fade-up" data-aos-delay="1400" class="present__list clearfix">
             <li class="present-item">
                 <div class="present-item__wrap">
                     <img class="present-item__img" src="images/present-1.png" alt="">
@@ -128,96 +134,96 @@
         </ul>
     </div>
 </div>
-<div class="password">
-    <h2 class="password__head">каждый код подарит<br>тебе гарантированный приз</h2>
-    <ul class="password__list clearfix">
-        <li class="password-item">
-            <p class="password-item__text_top">Собери</p>
-            <p class="password-item__text_mid">5 пачек lays smile</p>
-            <p class="password-item__text_bot">и получи электронные <br> часы</p>
-            <img class="password-item__img" src="images/clock.png" alt="">
-        </li>
-        <li class="password-item">
-            <p class="password-item__text_top">Собери</p>
-            <p class="password-item__text_mid">8 пачек lays smile</p>
-            <p class="password-item__text_bot">и получи в подарок <br> майку</p>
-            <img class="password-item__img" src="images/big-shirt.png" alt="">
-        </li>
-    </ul>
-    <p class="password__text">ПРИЗЫ ВЫ СМОЖЕТЕ получить В <span>СУПЕРМАРКЕТАХ</span> ГОРОДА БАКУ</p>
+<div class="password" id="promo">
     <div class="container">
-
+        <h2 data-aos="zoom-in" data-aos-delay="600" class="password__head">каждый код подарит<br>тебе гарантированный приз</h2>
+        <ul class="password__list clearfix">
+            <li data-aos="zoom-in-right" data-aos-delay="1000" class="password-item">
+                <p class="password-item__text_top">Собери</p>
+                <p class="password-item__text_mid">5 пачек lays smile</p>
+                <p class="password-item__text_bot">и получи электронные <br> часы</p>
+                <img class="password-item__img" src="images/clock.png" alt="">
+            </li>
+            <li data-aos="zoom-in-left" data-aos-delay="1400" class="password-item">
+                <p class="password-item__text_top">Собери</p>
+                <p class="password-item__text_mid">8 пачек lays smile</p>
+                <p class="password-item__text_bot">и получи в подарок <br> майку</p>
+                <img class="password-item__img" src="images/big-shirt.png" alt="">
+            </li>
+        </ul>
+        <p data-aos="fade-up" data-aos-delay="1800" class="password__text">ПРИЗЫ ВЫ СМОЖЕТЕ получить В <span>СУПЕРМАРКЕТАХ</span> ГОРОДА БАКУ</p>
     </div>
 </div>
-<div class="products">
-    <h2 class="products__head">ПРОДУКТЫ, УЧАСТВУЮЩИЕ В АКЦИИ</h2>
+<div class="products" id="products">
     <div class="container">
-        <p class="products__text">Получай гарантированный приз с каждой пачкой Lay’s с улыбкой. И это не всё! Хочешь знать, как получить ещё больше призов?
-            <a href="#">Читай здесь!</a></p>
-    </div>
-    <div class="products__slider clearfix">
-        <div class="products-item">
-            <div class="products-item__wrap">
-                <img class="products-item__img" src="images/products-1.png" alt="">
-            </div>
-            <p class="products-item__text">Lay’s Бекон</p>
-            <div class="products-item__sub">
-                <div class="products-sub">
-                    <p class="products-sub__text_top">Lay’s Краб</p>
-                    <img class="products-sub__img" src="images/gramm.png" alt="">
-                    <p class="products-sub__text_bot">— фасовка (в граммах)</p>
+        <h3 data-aos="fade-left" data-aos-delay="600" class="products__head">ПРОДУКТЫ, УЧАСТВУЮЩИЕ В АКЦИИ</h3>
+        <p data-aos="fade-up-left" data-aos-delay="1000" class="products__text">Получай гарантированный приз с каждой пачкой Lay’s с улыбкой. И это не всё! Хочешь знать, как получить ещё больше призов?
+                <a href="#">Читай здесь!</a>
+        </p>
+        <div data-aos="flip-up" data-aos-delay="1400" class="products__slider clearfix">
+            <div class="products-item">
+                <div class="products-item__wrap">
+                    <img class="products-item__img" src="images/products-1.png" alt="">
+                </div>
+                <p class="products-item__text">Lay’s Бекон</p>
+                <div class="products-item__sub">
+                    <div class="products-sub">
+                        <p class="products-sub__text_top">Lay’s Краб</p>
+                        <img class="products-sub__img" src="images/gramm.png" alt="">
+                        <p class="products-sub__text_bot">— фасовка (в граммах)</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="products-item">
-            <div class="products-item__wrap">
-                <img class="products-item__img" src="images/products-2.png" alt="">
-            </div>
-            <p class="products-item__text">Lay’s Зелёный лук</p>
-            <div class="products-item__sub">
-                <div class="products-sub">
-                    <p class="products-sub__text_top">Lay’s Краб</p>
-                    <img class="products-sub__img" src="images/gramm.png" alt="">
-                    <p class="products-sub__text_bot">— фасовка (в граммах)</p>
+            <div class="products-item">
+                <div class="products-item__wrap">
+                    <img class="products-item__img" src="images/products-2.png" alt="">
+                </div>
+                <p class="products-item__text">Lay’s Зелёный лук</p>
+                <div class="products-item__sub">
+                    <div class="products-sub">
+                        <p class="products-sub__text_top">Lay’s Краб</p>
+                        <img class="products-sub__img" src="images/gramm.png" alt="">
+                        <p class="products-sub__text_bot">— фасовка (в граммах)</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="products-item">
-            <div class="products-item__wrap">
-                <img class="products-item__img" src="images/products-3.png" alt="">
-            </div>
-            <p class="products-item__text">Lay’s Краб</p>
-            <div class="products-item__sub">
-                <div class="products-sub">
-                    <p class="products-sub__text_top">Lay’s Краб</p>
-                    <img class="products-sub__img" src="images/gramm.png" alt="">
-                    <p class="products-sub__text_bot">— фасовка (в граммах)</p>
+            <div class="products-item">
+                <div class="products-item__wrap">
+                    <img class="products-item__img" src="images/products-3.png" alt="">
+                </div>
+                <p class="products-item__text">Lay’s Краб</p>
+                <div class="products-item__sub">
+                    <div class="products-sub">
+                        <p class="products-sub__text_top">Lay’s Краб</p>
+                        <img class="products-sub__img" src="images/gramm.png" alt="">
+                        <p class="products-sub__text_bot">— фасовка (в граммах)</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="products-item">
-            <div class="products-item__wrap">
-                <img class="products-item__img" src="images/products-4.png" alt="">
-            </div>
-            <p class="products-item__text">Lay’s Сметана и Зелень</p>
-            <div class="products-item__sub">
-                <div class="products-sub">
-                    <p class="products-sub__text_top">Lay’s Краб</p>
-                    <img class="products-sub__img" src="images/gramm.png" alt="">
-                    <p class="products-sub__text_bot">— фасовка (в граммах)</p>
+            <div class="products-item">
+                <div class="products-item__wrap">
+                    <img class="products-item__img" src="images/products-4.png" alt="">
+                </div>
+                <p class="products-item__text">Lay’s Сметана и Зелень</p>
+                <div class="products-item__sub">
+                    <div class="products-sub">
+                        <p class="products-sub__text_top">Lay’s Краб</p>
+                        <img class="products-sub__img" src="images/gramm.png" alt="">
+                        <p class="products-sub__text_bot">— фасовка (в граммах)</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="products-item">
-            <div class="products-item__wrap">
-                <img class="products-item__img" src="images/products-1.png" alt="">
-            </div>
-            <p class="products-item__text">Lay’s Бекон</p>
-            <div class="products-item__sub">
-                <div class="products-sub">
-                    <p class="products-sub__text_top">Lay’s Краб</p>
-                    <img class="products-sub__img" src="images/gramm.png" alt="">
-                    <p class="products-sub__text_bot">— фасовка (в граммах)</p>
+            <div class="products-item">
+                <div class="products-item__wrap">
+                    <img class="products-item__img" src="images/products-1.png" alt="">
+                </div>
+                <p class="products-item__text">Lay’s Бекон</p>
+                <div class="products-item__sub">
+                    <div class="products-sub">
+                        <p class="products-sub__text_top">Lay’s Краб</p>
+                        <img class="products-sub__img" src="images/gramm.png" alt="">
+                        <p class="products-sub__text_bot">— фасовка (в граммах)</p>
+                    </div>
                 </div>
             </div>
         </div>
