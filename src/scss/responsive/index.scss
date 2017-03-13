@@ -634,6 +634,11 @@
 			font-size: 14px;
 		}
 		&_1{
+			&:before{
+				left: -14px;
+				width: 112px;
+				height: 251px;
+			}
 			.akcii-item{
 				&__text{
 					left: 100px;
@@ -641,17 +646,9 @@
 				&__img {
 					position: absolute;
 					top: 19px;
-					left: auto;
+					left: 24%;
 					width: 295px;
-					right: -22px;
 				}
-			}
-
-			&:before {
-				content: '1';
-				text-transform: uppercase;
-				top: -54px;
-				left: -22px;
 			}
 		}
 		&_2{
@@ -663,8 +660,11 @@
 				}
 			}
 			&:before {
-				top: -54px;
-				left: -80px;
+				top: -35px;
+				left: -79px;
+				background-size: contain;
+				width: 220px;
+				height: 302px;
 			}
 		}
 		&_3{
@@ -676,12 +676,15 @@
 				}
 				&__text{
 					bottom: 15px;
-					left: 90px;
+					left: 33%;
 				}
 			}
 			&:before {
-				top: -56px;
-				left: -62px;
+				background-size: contain;
+				top: -20px;
+				left: -20px;
+				width: 148px;
+				height: 298px;
 			}
 		}
 		&_4{
@@ -697,8 +700,11 @@
 				}
 			}
 			&:before{
-				top: -54px;
-				left: -99px;
+				background-size: contain;
+				top: -31px;
+				left: -107px;
+				width: 238px;
+				height: 276px;
 			}
 		}
 		&__wrap{
