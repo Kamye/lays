@@ -74,8 +74,12 @@
 		text-align: left;
 		line-height: 36px;
 		border-bottom: 2px solid #000;
+		height: auto;
 		.nav-link{
 			color: #df2625;
+			&:before{
+				display: none;
+			}
 			&__wrap{
 				display: none;
 			}
