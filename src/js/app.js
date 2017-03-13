@@ -16,6 +16,8 @@ $(function(){
     $('#nav').slicknav();
 });
 
+$('#resp').on('click', function(){ $("#nav").slicknav('toggle');})
+
 $("#nav, .slicknav_nav").on("click","a", function (event) {
     //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();

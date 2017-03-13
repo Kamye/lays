@@ -112,6 +112,20 @@
 }
 
 @media screen and (max-width: 980px){
+	.header{
+		&__nav-list{
+			display: none;
+		}
+	}
+
+	.slicknav_menu{
+		display: block;
+	}
+
+	.lang{
+		display: none;
+	}
+
 	.main{
 		padding-bottom: 410px;
 		&__content{
@@ -286,16 +300,6 @@
 }
 
 @media screen and (max-width: 720px){
-	.header{
-		&__nav-list{
-			display: none;
-		}
-	}
-
-	.slicknav_menu{
-		display: block;
-	}
-
 	.main{
 		padding-bottom: 480px;
 		&__content{

@@ -9,7 +9,7 @@
                 <a href="#present" class="nav-link">Призы</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#main" class="nav-link">
                     <img class="logo" src="images/logo.png" alt="">
                 </a>
             </li>
@@ -20,9 +20,21 @@
                 <a href="#products" class="nav-link">Продукты</a>
             </li>
         </ul>
+        <div class="responsive-nav">
+           <img class="responsive-nav__bar" id="resp" src="images/nav-bar.png" alt="">
+            <a href="#main" class="nav-logo"><img src="images/nav-logo.png" alt=""></a>
+            <ul class="responsive-nav__lang clearfix">
+                <li class="lang__item"><a class="lang__link" href="#">AZE</a></li>
+                <li class="lang__item"><a class="lang__link lang__link_act" href="#">РУС</a></li>
+            </ul>
+        </div>
+        <ul class="lang clearfix">
+            <li class="lang__item"><a class="lang__link" href="#">AZE</a></li>
+            <li class="lang__item"><a class="lang__link lang__link_act" href="#">РУС</a></li>
+        </ul>
     </div>
 </header>
-<div class="overflow main clearfix">
+<div class="overflow main clearfix" id="main">
     <div class="main__content">
             <p data-aos="fade-down" class="main-text main-text_regular">Сделай селфи</p>
             <p data-aos="fade-down" class="main-text main-text_small">#LaysSmiles</p>
@@ -131,7 +143,13 @@
                 <img class="password-item__img" src="images/big-shirt.png" alt="">
             </li>
         </ul>
-        <p data-aos="fade-up" data-aos-delay="400" class="password__text">ПРИЗЫ ВЫ СМОЖЕТЕ получить В <span>СУПЕРМАРКЕТАХ</span> ГОРОДА БАКУ</p>
+        <p data-aos="fade-up" data-aos-delay="400" class="password__text">ПРИЗЫ ВЫ СМОЖЕТЕ получить В <a href="#shop" rel="modal:open">СУПЕРМАРКЕТАХ</a> ГОРОДА БАКУ</p>
+        <div id="shop" class="shop">
+            <a href="#" class="shop__link">Баку</a>
+            <a href="#" class="shop__link">Баку</a>
+            <a href="#" class="shop__link">Баку</a>
+            <a href="#" class="shop__link">Баку</a>
+        </div>
     </div>
 </div>
 <div class="overflow products" id="products">
