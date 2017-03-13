@@ -1,23 +1,26 @@
 /*----header----*/
 
 .header{
-	position: relative;
+	position: fixed;
+	width: 100%;
 	background: #fedb00;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-	z-index: 2;
+	z-index: 999;
 	&__nav-list{
 		margin: 0 auto;
-		width: 660px;
-		padding-left: 106px;
+		width: 569px;
 		padding-bottom: 1px;
+		height: 80px;
 	}
 }
 
 .slicknav_menu{
 	display: none;
 	background: #fedb00;
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 	padding: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
 }
 
 .slicknav_btn {
@@ -29,7 +32,7 @@
 	border-radius: 0;
 	background: #fedb00;
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-	height: 118px;
+	height: 70px;
 	padding: 0;
 	span{
 		display: none !important;
@@ -38,20 +41,22 @@
 		content: '';
 		display: inline-block;
 		position: absolute;
-		width: 50px;
-		height: 42px;
-		background: url("../../images/nav-bar.png") top	left;
-		top: 38px;
+		width: 37px;
+		height: 32px;
+		background: url("../../images/nav-bar.png") no-repeat top	left;
+		top: 18px;
 		left: 28px;
+		background-size: contain;
 	}
 	&:after{
 		content: '';
 		display: inline-block;
 		position: absolute;
-		width: 120px;
-		height: 108px;
+		width: 72px;
+		height: 67px;
 		background: url("../../images/nav-logo.png") top left;
-		left: calc(50% - 60px);
+		left: calc(50% - 36px);
+		background-size: contain;
 	}
 }
 
@@ -61,6 +66,7 @@
 }
 
 .slicknav_nav{
+
 	.nav-item{
 		margin: 0 !important;
 		font-size: 18px;
@@ -88,13 +94,84 @@
 	text-transform: uppercase;
 	font-size: 12px;
 	margin-right: 23px;
-	padding-top: 12px;
-	&:last-child{
-		margin-right: 0;
-		margin-left: 6px;
+	height: 80px;
+	&:first-child{
+		.nav-link{
+			&:before{
+				width: 26px;
+				height: 26px;
+				background: url("../../images/akcii.png") top center no-repeat;
+				top: 13px;
+				left: calc(50% - 13px);
+			}
+			&:hover{
+				&:before{
+					transition: 500ms;
+					background: url("../../images/akcii-a.png") top	center no-repeat;
+				}
+			}
+		}
+	}
+	&:nth-child(2){
+		.nav-link{
+			&:before{
+				width: 25px;
+				height: 29px;
+				background: url("../../images/present.png") top	center no-repeat;
+				top: 13px;
+				left: calc(50% - 12.5px);
+			}
+			&:hover{
+				&:before{
+					transition: 500ms;
+					background: url("../../images/present-a.png") top center no-repeat;
+				}
+			}
+		}
 	}
 	&:nth-child(3){
 		padding-top: 0;
+		.nav-link{
+			padding: 0;
+			&:hover{
+				background: rgba(256, 256, 256, 0);
+			}
+		}
+	}
+	&:nth-child(4){
+		.nav-link{
+			&:before{
+				width: 44px;
+				height: 26px;
+				background: url("../../images/shirt.png") top center no-repeat;
+				top: 14px;
+				left: calc(50% - 22px);
+			}
+			&:hover{
+				&:before{
+					transition: 500ms;
+					background: url("../../images/shirt-a.png") top center no-repeat;
+				}
+			}
+		}
+	}
+	&:last-child{
+		margin-right: 0;
+		.nav-link{
+			&:before{
+				width: 23px;
+				height: 26px;
+				background: url("../../images/smile.png") top center no-repeat;
+				top: 14px;
+				left: calc(50% - 11.5px);
+			}
+			&:hover{
+				&:before{
+					transition: 500ms;
+					background: url("../../images/smile-a.png") top center no-repeat;
+				}
+			}
+		}
 	}
 }
 
@@ -102,9 +179,18 @@
 	display: block;
 	text-decoration: none;
 	color: #626568;
+	padding: 53px 12px 0;
+	height: 100%;
+	position: relative;
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+	}
 	&:hover{
 		transition: 500ms;
-		color: red;
+		color: #fff;
+		background: #df0318;
 	}
 	&__wrap{
 		height: 29px;
@@ -122,8 +208,6 @@
 
 .logo{
 	padding-top: 7px;
-	padding-left: 18px;
-	padding-right: 4px;
 }
 
 /*----header----*/
@@ -134,6 +218,7 @@
 	background: #fedb00;
 	position: relative;
 	padding-bottom: 88px;
+	padding-top: 55px;
 	&__img{
 		position: absolute;
 		left: 0;
@@ -141,13 +226,14 @@
 		z-index: 1;
 	}
 	&__content{
+
 		padding-top: 57px;
 		padding-left: 127px;
 		position: relative;
 		z-index: 2;
 		&_sub{
 			position: absolute;
-			top: 0;
+			bottom: 0;
 			right: 0;
 			width: 258px;
 			padding: 0;
@@ -332,11 +418,7 @@
 	}
 	&:hover{
 		transition: 500ms;
-		color: #e21521;
-		&:after{
-			transition: 500ms;
-			background: url("../../images/main-sub-arrow-act.png");
-		}
+		background: #337100;
 	}
 }
 
@@ -345,8 +427,7 @@
 /*----akcii----*/
 
 .akcii{
-	background: url("../../images/password-bg.png");
-	background-size: cover;
+	background: url("../../images/akcii-bg-4.png");
 	&__head{
 		padding: 37px 0 41px;
 	}
@@ -359,17 +440,24 @@
 	position: relative;
 	overflow: hidden;
 	font-family: 'GothamProBold';
+	&:before{
+		/*line-height: 592px;
+		top: -99px;
+		font-size: 590px;
+		color: white;*/
+		background-size: contain;
+		position: absolute;
+		top: -11px;
+		content: '';
+	}
 	&_1{
 		background: url("../../images/akcii-step-1-bg.png") top center;
 		background-size: cover;
 		&:before{
-			content: '1';
-			position: absolute;
-			font-size: 550px;
-			color: white;
-			text-transform: uppercase;
-			top: -99px;
-			left: -31px;
+			left: -19px;
+			width: 169px;
+			height: 388px;
+			background: url("../../images/1.png") top center no-repeat;
 		}
 		.akcii-item__img{
 			position: absolute;
@@ -381,13 +469,10 @@
 		background: url("../../images/akcii-step-2-bg.png") top center;
 		background-size: cover;
 		&:before{
-			content: '2';
-			position: absolute;
-			font-size: 550px;
-			color: white;
-			text-transform: uppercase;
-			top: -98px;
-			left: -100px;
+			left: -74px;
+			width: 286px;
+			height: 392px;
+			background: url("../../images/2.png")  top center no-repeat;
 		}
 		.akcii-item__img{
 			position: absolute;
@@ -426,13 +511,10 @@
 		background: url("../../images/akcii-step-3-bg.png") top center;
 		background-size: cover;
 		&:before{
-			content: '3';
-			position: absolute;
-			font-size: 550px;
-			color: white;
-			text-transform: uppercase;
-			top: -99px;
-			left: -116px;
+			left: -1px;
+			width: 194px;
+			height: 393px;
+			background: url("../../images/3.png") top center no-repeat;
 		}
 		.akcii-item__img{
 			position: absolute;
@@ -449,13 +531,10 @@
 		background: url("../../images/akcii-step-4-bg.png") top center;
 		background-size: cover;
 		&:before{
-			content: '4';
-			position: absolute;
-			font-size: 550px;
-			color: white;
-			text-transform: uppercase;
-			top: -99px;
-			left: -136px;
+			left: -120px;
+			width: 335px;
+			height: 388px;
+			background: url("../../images/4.png") top center no-repeat;
 		}
 		.akcii-item__img{
 			position: absolute;
@@ -824,21 +903,32 @@
 		&_face{
 			background: #2e67a3;
 			font-size: 18px;
+			&:hover{
+				transition: 500ms;
+				background: #235486;
+			}
 		}
 		&_vk{
 			background: #2d77a8;
+			&:hover{
+				transition: 500ms;
+				background: #235f84;
+			}
 		}
 		&_yt{
 			background: #c50000;
 			font-size: 20px;
+			&:hover{
+				transition: 500ms;
+				background: #940000;
+			}
 		}
 		&_mail{
 			background: #ecbf00;
-		}
-		&:hover{
-			color: red;
-			transition: 500ms;
-			background: #fedb00;
+			&:hover{
+				transition: 500ms;
+				background: #cda61e;
+			}
 		}
 	}
 }
