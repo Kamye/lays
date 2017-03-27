@@ -12,6 +12,11 @@ $('.present__list').slick({
         }
     ]
 });
+
+$(document).ready(function(){
+    $('.scrollbar-inner').scrollbar();
+});
+
 $(function(){
     $('#nav').slicknav();
 });

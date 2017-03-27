@@ -8,7 +8,7 @@
 	z-index: 999;
 	&__nav-list{
 		margin: 0 auto;
-		width: 569px;
+		text-align: center;
 		padding-bottom: 1px;
 		height: 80px;
 	}
@@ -20,6 +20,8 @@
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 	height: 70px;
 	width: 100%;
+	display: none;
+	z-index: 9999;
 	&__bar{
 		position: absolute;
 		top: 13px;
@@ -766,15 +768,114 @@
 	}
 }
 
+/*----popup----*/
+
 .shop{
 	position: absolute;
 	display: none;
-	left: calc(50% - 250px);
-	top: 50%;
+	left: calc(50% - 420px);
+	top: calc(50% - 318px);
 	right: auto;
-	transform: translateY(50%);
-	width: 500px;
+	width: 840px;
+	height: 636px;
+	border-radius: 10px;
+	padding-top: 26px;
+	padding-right: 19px;
+	&__head{
+		color: #2c2c2c;
+		font-size: 20px;
+		text-transform: uppercase;
+		font-family: 'GothamProBold';
+		text-align: center;
+		margin-bottom: 29px;
+	}
 }
+
+.shop-wrap{
+	padding-right: 29px;
+}
+
+.modal{
+	max-width: 100%;
+}
+
+.modal a.close-modal{
+	right: 21px;
+	top: 26px;
+	width: 24px;
+	height: 24px;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAilBMVEXrIS7////rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7rIS7///+r3KNJAAAALHRSTlMAABZLf7LmBYD6MNBq+3DO/oivEhfdYsUJJeqwAzb0l0phfHuVAqwHwA/2980awGkAAAABYktHRAH/Ai3eAAAACXBIWXMAAAsSAAALEgHS3X78AAAAz0lEQVQoz3WS2RaDIAxEo4AL7lZttdVq9yX//30VQenGvIh3OJMQAJCyCWWOwyixLSmJXc9HJZ+62uABvingsxH6+CE/lAb/4qPDheEG+KPAHQ1PrKI4kSjNcvGhFthTULQqyolXVjaF2UDkzvWmbgSHKp3+CVAVu921neZIgc0F99APC0cGztLKATRHRxtjDhxRG0zzoYcTLlF04VXatecLzsWJ5ohNfb2halceMFN1y+L+UAeUI8kz1U8SP9VIzEM0jt18UearNT+Gf8/nBfo6PZmKuEh2AAAAAElFTkSuQmCC');
+}
+
+.blocker{
+	z-index: 999;
+}
+
+.shop-item{
+	background: #f6f6f6;
+	border-radius: 10px;
+	padding: 12px;
+	margin-bottom: 13px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+	&__img{
+		vertical-align: middle;
+	}
+}
+
+.shop-content{
+	display: inline-block;
+	width: calc(100% - 100px);
+	vertical-align: middle;
+	padding-left: 19px;
+	&__head{
+		text-transform: uppercase;
+		font-family: 'GothamProBold';
+		color: #2c2c2c;
+		font-size: 18px;
+		margin-bottom: 6px;
+	}
+	&__link{
+		display: inline-block;
+		text-decoration: none;
+		color: #2c2c2c;
+		font-size: 18px;
+		margin-bottom: 1px;
+		font-family: 'GothamProRegular';
+		position: relative;
+		&:before{
+			content: '';
+			display: inline-block;
+			position: absolute;
+			width: 0;
+			height: 1px;
+			background: #2c2c2c;
+			left: 0;
+			bottom: 0;
+			transition: width 500ms;
+		}
+		&:hover:before{
+			width: 100%;
+		}
+	}
+}
+
+.content .demo{
+	border: none;
+	padding: 0;
+}
+
+.scrollbar-inner>.scroll-element .scroll-bar{
+	background: #bcbcbc;
+}
+
+.content .demo>div,
+.scrollbar-inner .scroll-content{
+	max-height: 520px !important;
+}
+
+/*----popup----*/
 
 /*----password----*/
 
